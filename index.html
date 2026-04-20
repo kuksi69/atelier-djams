@@ -130,14 +130,15 @@
                 </iframe>
             </div>
             
-            <form class="bg-zinc-950 p-8 rounded-lg border border-zinc-800">
-                <h3 class="text-xl font-bold mb-6 uppercase text-red-600">Demande de devis</h3>
-                <div class="space-y-4">
-                    <input type="text" placeholder="Nom Complet" class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600">
-                    <input type="text" placeholder="Modèle du Véhicule" class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600">
-                    <textarea placeholder="Description des travaux" rows="4" class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600"></textarea>
-                    <button class="w-full bg-red-600 hover:bg-red-700 py-4 font-bold rounded transition">ENVOYER MA DEMANDE</button>
-                </div>
+            <form action="https://formspree.io/f/ylvi.elezaj@lmdsio.fr" method="POST" class="bg-zinc-950 p-8 rounded-lg border border-zinc-800">
+              <h3 class="text-xl font-bold mb-6 uppercase text-red-600">Demande de devis</h3>
+              <div class="space-y-4">
+                <input type="text" name="nom" placeholder="Nom Complet" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600">
+                <input type="text" name="vehicule" placeholder="Modèle du Véhicule" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600">
+                <textarea name="message" placeholder="Description des travaux" rows="4" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600"></textarea>
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-4 font-bold rounded transition">ENVOYER MA DEMANDE</button>
+              </div>
             </form>
         </div>
     </section>
