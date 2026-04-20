@@ -6,6 +6,8 @@
     <title>Atelier Djam's | Carrosserie & Mécanique Haute Technicité</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 <body class="bg-black text-white font-sans">
 
@@ -73,28 +75,46 @@
 
     <section id="galerie" class="py-20 bg-zinc-950">
     <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold uppercase text-white">Nos Travaux</h2>
+            <div class="w-16 h-1 bg-red-600 mx-auto mt-4"></div>
+        </div>
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="overflow-hidden rounded-lg">
-                <img src="images_travaux/20250529_183841.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-500">
-            </div>
-            <div class="overflow-hidden rounded-lg">
-                <img src="images_travaux/20250529_183807.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-500">
-            </div>
-            <div class="overflow-hidden rounded-lg">
-                <img src="images_travaux/20250529_183814.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-500">
-            </div>
-            <div class="overflow-hidden rounded-lg">
-                <img src="images_travaux/20250529_183753.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-500">
-            </div>
-            <div class="overflow-hidden rounded-lg">
-                <img src="images_travaux/20251218_185852.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-500">
-            </div>
-            <div class="overflow-hidden rounded-lg">
-                <img src="images_travaux/IMG20260213154643.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-500">
-            </div>
+            <a href="images_travaux/20250529_183841.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20250529_183841.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20250529_183807.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20250529_183807.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20250529_183814.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20250529_183814.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20250529_183753.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20250529_183753.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20251218_185852.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20251218_185852.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/IMG20260213154643.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/IMG20260213154643.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20240309_120044.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20240309_120044.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20240311_113146.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20240311_113146.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
+            <a href="images_travaux/20240505_183147.jpg" data-fancybox="gallery" class="overflow-hidden rounded-lg block">
+                <img src="images_travaux/20240505_183147.jpg" class="w-full h-72 object-cover hover:scale-110 transition duration-500" alt="Atelier Djam's">
+            </a>
         </div>
     </div>
 </section>
+
+<script>
+    Fancybox.bind("[data-fancybox]", {});
+</script>
 
     <section id="contact" class="py-24 bg-black">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
