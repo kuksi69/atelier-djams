@@ -130,19 +130,22 @@
                 </iframe>
             </div>
             
-            <form action="https://formspree.io/f/mjgjopeg" method="POST" class="bg-zinc-950 p-8 rounded-lg border border-zinc-800">
-              <h3 class="text-xl font-bold mb-6 uppercase text-red-600">Demande de devis</h3>
-              <div class="space-y-4">
-                <input type="text" name="nom" placeholder="Nom Complet" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600 text-white">    
-                <input type="tel" name="telephone" placeholder="Numéro de Téléphone" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600 text-white">
-                <input type="text" name="vehicule" placeholder="Modèle du Véhicule" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600 text-white">
-                <textarea name="message" placeholder="Description des travaux" rows="4" required class="w-full bg-zinc-900 border border-zinc-800 p-3 rounded focus:outline-none focus:border-red-600 text-white"></textarea>
-                <input type="text" name="_gotcha" style="display:none">
-                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-4 font-bold rounded transition">
-                  ENVOYER MA DEMANDE
-                </button>
-              </div>
-            </form>
+            <div class="bg-zinc-950 p-8 rounded-lg border border-zinc-800">
+              <h3 class="text-xl font-bold mb-6 uppercase text-red-600">Demande de devis par Mail</h3>
+              <div class="space-y-6">
+                <p class="text-zinc-400 text-sm">
+                  Cliquez sur le bouton ci-dessous. Votre application de messagerie s'ouvrira avec un modèle de demande prêt à être rempli.
+                </p>
+                <a href="mailto:ylvi.elezaj@lmdsio.fr?subject=Demande de devis - Atelier Djam's&body=Bonjour Atelier Djam's,%0D%0A%0D%0AJe souhaite obtenir un devis pour mon véhicule :%0D%0A- Modèle : %0D%0A- Téléphone : %0D%0A- Description des travaux : %0D%0A%0D%0AMerci d'avance." 
+                class="w-full bg-red-600 hover:bg-red-700 py-4 font-bold rounded transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-envelope"></i>
+                ENVOYER MA DEMANDE
+              </a>
+              <p class="text-zinc-500 text-xs italic">
+                Note : Cette méthode utilise votre application de mail habituelle.
+              </p>
+            </div>
+          </div>
         </div>
     </section>
 
